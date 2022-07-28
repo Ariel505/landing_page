@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>The LIG Project Landing Page</title>
+    <meta name="description" content="Simplified Bootstrap template with sticky menu">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-menu.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.3.1/pyLDAvis/js/ldavis.v1.0.0.css">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Welcome</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Geoparsing</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">LIG Finder</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#architect">Architect</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#find">Find Parcels</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#keyword">Keyword Analysis</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#sentiment">Sentiment Analysis</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#visual">Visualization</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#topic">Topic Modeling</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#team">LIG Team</a>
+                    </li>
+                </ul>
+            </div>	<!-- .navbar-collapse -->
+        </div>		<!-- .container -->
+    </nav>
+    <!-- Welcome   -->
+    <section id="welcome" class="welcome-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Apply Geoparsing and Natural Language Procedures on Hamburg parliament database and newsletters in the context of real estate management</h1>
+					<p>&nbsp;</p>
+                    <p> <a href="#" target="_blank" rel="nofollow">Digital City Science</a>, Hafencity University Hamburg</p>
+					<p>&nbsp;</p>
+					<p>The LIG project is financed by Landesbetrieb Immobilienmanagement und Grundvermögen (LIG). The official real estate management government institution in Hamburg. We, Digital City Science as a research group, have started our corporation since the year 2020. The project began with focusing on building a web interactive tool for site selection. Starting from last year, a geoparsing concept was introduced to the project and we aim to build a semi-automatic process to analyse text data. </p>
+					<p>&nbsp;</p>
+					<p><a href="#" style="font-size:24px">Geoparsing </a>is the act of transforming from an unstructured free text, with a procedure of text cleaning and location extraction, and further geocoding into geo coordinate.</p>
+					<p>&nbsp;</p><p>&nbsp;</p>
+                    <a class="btn btn-primary page-scroll" href="#about">Workflow of Geoparsing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geoparsing -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Workflow  of Geoparsing</h1>					
+					<p>&nbsp;</p>
+					<div style="text-align:left;">
+					<img src="img/workflow.png" style="max-width: 75%; float: left; padding: 0 20px 20px 20px; text-align:right" alt="Workflow" />
+					<p>&nbsp;</p>
+					<p>
+<li style="text-align:left;">data clean preprocessing: (conversion into small letters, remove punctuations, special characters and numbers; remove German stop words)</li>
+<li style="text-align:left;">Location Extraction (Name Entity Recognition): We use the Flair  / NER-German-Large module from Hugging Face.</li>
+<li style="text-align:left;">Geo coordinate conversion (Geocoding): We use Nominatim open source geocoder.</li>
+<li style="text-align:left;">Keyword analysis: visualise with word cloud</li>
+<li style="text-align:left;">Sentiment analysis: VADER and TextBlobDE</li>
+<li style="text-align:left;">Topic modeling: LDA method</li></p></div>
+<p>Dataset we process Hamburg Parliament Database and Elbvertiefung e-Newsletter and include point results on the interactive web tool:</p>
+                    
+                </div>
+				<p>&nbsp;</p><p>&nbsp;</p>
+				 <a class="btn btn-primary page-scroll" href="#contact">LIG Finder</a>
+            </div>
+        </div>
+    </section>
+<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>The interactive web tool, the LIG Finder</h1>
+					
+					<video style="max-width: 85%; height: auto; " controls>
+  <source src="video/LIG_Finder.mp4" type="video/mp4"></video>
+
+					<p>Source Code: <a href="https://github.com/digitalcityscience/ligfinder_refactor" target="_blank">Github Link </a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+	
+	 <!-- Architect Section -->
+    <section id="architect" class="architect-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>The software architect of the LIG Finder</h1>
+					<p>&nbsp;</p>
+					<p style="text-align:left;">
+					Since early in this year, we refactored the LIG Finder app and had chosen open source solutions such as Python Flask as the middleware, PostgreSQL + PostGIS as database, and Vue.js as the javascript framework. With the refactor version we preferred Maplibre GL JS over leaflet or openlayers due to superior rendering performance and its 3D renderings potential. It also has a geocoding toolbox to allow web users to query a place name or an address. The user database makes it possible to  favourite land parcels and store them for later use.</p>
+<p style="text-align:left;">
+The LIG Finder Application follows the client-server architecture, in which the client accesses the services via HTTP requests. The client consists of the user interface built with Vuejs, and MapLibre GL JS as an interactive map renderer. The Python Flask and PostgreSQL with PostGIS extension were used as middleware and database, respectively for building the APIs and services.</p>
+<img src="img/classification.jpg" style="max-width: 58%; height: auto; " alt="classification module" /><br/>
+<a class="btn btn-primary page-scroll" href="#find">Finding Parcels</a>
+
+					
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+	<!-- Finding Parcel Section -->
+    <section id="find" class="find-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Finding parcels of the LIG Finder</h1>
+					<p>&nbsp;</p>
+					
+<p>&nbsp;</p><p style="text-align:left;">Finding parcels begins with selecting an Area of Interest (AoI). Users are provided with three selection methods for defining an AOI, including:<br/>
+a- Administrative divisions: Users can interactively select the AoI in four different administrative levels by clicking on the geometry or selecting by name.<br/>
+b- Drawing: The AoI can be defined by drawing a polygon on the map canvas.<br/>
+c- Walking, biking, and driving distance: the PgRouting extension was used for the calculation of the travel distances. Thus, the corresponding OSM network data were retrieved, stored in the database, and their network topology and costs (time) were calculated in the preprocessing phase. Finally, the polygon (AoI) is created by specifying all accessible nodes from a central point and within a specified time.<br/>
+Using spatial intersection, land parcels within the AoI are then retrieved. Next, parcels can be filtered based on their area and gross built-up area. Further, users can refine the parcels using 98 criteria divided into three categories including land-use, property, and special areas, by placing criteria inside exclude and include parts. Finally, users can rank the filtered parcels based on their proximity to the city facilities using KNN analysis.
+</p><img src="img/find_parcel.png" style="max-width: 45%; height: auto; " alt="find parcels module" /><br/><br/>
+<a class="btn btn-primary page-scroll" href="#keyword">Keyword Analysis</a>
+
+					
+                </div>
+            </div>
+        </div>
+    </section><br/>
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+	 <!-- Keyword Section -->
+    <section id="keyword" class="keyword-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Keyword analysis: Top 20 keywords from Elbvertiefungs</h1>
+				<p>&nbsp;</p>
+<img src="img/index.png" style="max-width: 35%; height: auto; " alt="keyword clouds" />&nbsp;&nbsp;<img src="img/index2.png" style="max-width: 35%; height: auto; " alt="keyword clouds" /><br/>
+<img src="img/index3.png" style="max-width: 35%; height: auto; " alt="keyword clouds" />&nbsp;&nbsp;<img src="img/index4.png" style="max-width: 35%; height: auto; " alt="keyword clouds" /><br/><p>&nbsp;</p>
+<a class="btn btn-primary page-scroll" href="#sentiment">Sentiment Analysis</a>
+
+					
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+	 <!-- Sentiment Section -->
+    <section id="sentiment" class="sentiment-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Sentiment Analysis</h1>
+					<p>&nbsp;</p>
+					
+<div style="text-align:left;"><img src="img/sentiment.png" style="max-width: 45%; float: left; padding: 0 20px 20px 0; text-align:center" alt="TextBlobDE" /><p>&nbsp;</p>
+<p>TextBlobDE & VADER - understand Polarity and Subjectivity</p><p>&nbsp;</p>The distribution of newsletter articles are less polarised and much fewer aggregated to the X axis, compared to parliament dataset. The colour of points represent TextBlobDE and VADER comparison. When both methods yield positive results, draw the green points. Points in blue represent both methods that determine negative results. Points in yellow show both methods yield neutral results. Those red points represent these two methods yield contradictory results.</div>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<a class="btn btn-primary page-scroll" href="#visual">Visualization</a>
+
+					
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+	<!-- Visualization -->
+    <section id="visual" class="visual-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Visualization</h1>
+					<div style="text-align:left;"><img src="img/2D_Pie.png" style="max-width: 40%; float: left; padding: 0 20px 20px 0; text-align:center" alt="2D" />
+<p>2D Pie Chart sentiment result comparison</p><p>&nbsp;</p>When we draw these results in 2D, one can easily see spatial distribution of these sentiment analysis results. With pie chart probably is an efficient way to see distribution in percentage, especially when there are duplicated points which fall on the same coordinates. Figure to the left suggest, the bigger the pie suggests more points are geocoded into the same location.</div><p>&nbsp;</p><p>&nbsp;</p><div style="text-align:right;">
+<img src="img/Building+bars.jpg" style="max-width: 40%; float: right; padding: 0 20px 20px 20px; text-align:left" alt="3D" /><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>Another geovisualization approach is a 3D stacked bar chart. Figure to the right shows how the spatial distribution of sentiment analysis. Colour code were adapted the same as in the 2D Pie chart.</div>
+<br/><p><a class="btn btn-primary page-scroll" href="#topic">Topic Modeling</a></p>
+
+
+					
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+	<!-- Topic Modeling -->
+    <section id="topic" class="topic-section">
+        <div class="container">
+<div id="ldavis_el183034140325709312512256101712"></div>
+
+    </section>
+	
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+	<!-- LIG Team -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>The LIG Team</h1>
+					<p>&nbsp;</p>
+					<div style="text-align:center;">
+					<img src="img/Martin.jpg" style="max-width: 30%; height: auto; float: center; padding: 0 20px 0px 50px; " alt="Martin Niggemann" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="img/Ariel.jpg" style="max-width: 30%; height: auto; float: center; padding: 0 20px 0px 20px;  " alt="Juiwen Chang" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="img/Qasem.png" style="max-width: 30%; height: auto; float: center; padding: 0 50px 0px 20px; " alt="Qasem" />
+					<br/>
+<p style="text-align:center;">
+Project Manager: Martin Niggemann&nbsp;&nbsp;&nbsp;&nbsp;
+Geoparsing: Juiwen Chang&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Software architect: Qasem Safariallahkheili &nbsp;&nbsp;&nbsp;
+
+</p></div><p>&nbsp;</p>
+<div style="text-align:center;">
+<img src="img/Filipe.jpg" style="max-width: 30%; height: auto; float: center; padding: 0 20px 0px 50px; " alt="Filipe" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="img/Maksym.jpg" style="max-width: 30%; height: auto; float: center; padding: 0 50px 0px 20px; " alt="Maksym" />
+<p>Social Scientist: Filipe Mello Rose&nbsp;&nbsp;&nbsp;&nbsp;
+Student Assistent: Maksym Yermakovych</p><p>&nbsp;</p></div>
+<a class="btn btn-primary page-scroll" href="#">Back to top</a>
+
+					
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/sticky-menu.js"></script>
+	<script src="js/ldavis.js"></script>
+</body>
+
+</html>
