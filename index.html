@@ -36,7 +36,7 @@
                         <a class="page-scroll" href="#contact">LIG Finder</a>
                     </li>
 					<li>
-                        <a class="page-scroll" href="#architect">Architect</a>
+                        <a class="page-scroll" href="#architect">Software Architect</a>
                     </li>
 					<li>
                         <a class="page-scroll" href="#find">Find Parcels</a>
@@ -54,7 +54,7 @@
                         <a class="page-scroll" href="#topic">Topic Modeling</a>
                     </li>
 					<li>
-                        <a class="page-scroll" href="#team">LIG Team</a>
+                        <a class="page-scroll" href="#team">The LIG Team</a>
                     </li>
                 </ul>
             </div>	<!-- .navbar-collapse -->
@@ -67,11 +67,11 @@
                 <div class="col-lg-12">
                     <h1>Apply Geoparsing and Natural Language Procedures on Hamburg parliament database and newsletters in the context of real estate management</h1>
 					<p>&nbsp;</p>
-                    <p> <a href="#" target="_blank" rel="nofollow">Digital City Science</a>, Hafencity University Hamburg</p>
+                    <p> <a href="https://www.hcu-hamburg.de/research/digital-city-science" target="_blank" rel="nofollow">Digital City Science</a>, Hafencity University Hamburg</p>
 					<p>&nbsp;</p>
-					<p>The LIG project is financed by Landesbetrieb Immobilienmanagement und Grundvermögen (LIG). The official real estate management government institution in Hamburg. We, Digital City Science as a research group, have started our corporation since the year 2020. The project began with focusing on building a web interactive tool for site selection. Starting from last year, a geoparsing concept was introduced to the project and we aim to build a semi-automatic process to analyse text data. </p>
-					<p>&nbsp;</p>
-					<p><a href="#" style="font-size:24px">Geoparsing </a>is the act of transforming from an unstructured free text, with a procedure of text cleaning and location extraction, and further geocoding into geo coordinate.</p>
+					<div style="text-align:left"><img src="img/Geoparsing.png" style="max-width: 45%; float: right; padding: 0 20px 20px 20px; text-align:left" alt="Geoparsing" /><span style="font-size:24px">Geoparsing </span>is the act of transforming from an unstructured free text, with a procedure of text cleaning and location extraction, and further geocoding into geo coordinate.<p>&nbsp;</p>
+					<p>The LIG project is financed by Landesbetrieb Immobilienmanagement und Grundvermögen (LIG). The official real estate management government institution in Hamburg. We, Digital City Science as a research group, have started our corporation since the year 2020. The project began with focusing on building an interactive web tool for site selection. Starting from last year, a geoparsing concept was introduced to the project and we aim to build a <b><i>semi-automatic process to analyse text data</i></b>. </p>
+					</div>
 					<p>&nbsp;</p><p>&nbsp;</p>
                     <a class="btn btn-primary page-scroll" href="#about">Workflow of Geoparsing</a>
                 </div>
@@ -87,20 +87,20 @@
                     <h1>Workflow  of Geoparsing</h1>					
 					<p>&nbsp;</p>
 					<div style="text-align:left;">
-					<img src="img/workflow.png" style="max-width: 75%; float: left; padding: 0 20px 20px 20px; text-align:right" alt="Workflow" />
+					<img src="img/workflow.png" style="max-width: 75%; float: left; padding: 0 20px 20px 20px; text-align:left" alt="Workflow" />
 					<p>&nbsp;</p>
 					<p>
-<li style="text-align:left;">data clean preprocessing: (conversion into small letters, remove punctuations, special characters and numbers; remove German stop words)</li>
-<li style="text-align:left;">Location Extraction (Name Entity Recognition): We use the Flair  / NER-German-Large module from Hugging Face.</li>
-<li style="text-align:left;">Geo coordinate conversion (Geocoding): We use Nominatim open source geocoder.</li>
-<li style="text-align:left;">Keyword analysis: visualise with word cloud</li>
-<li style="text-align:left;">Sentiment analysis: VADER and TextBlobDE</li>
-<li style="text-align:left;">Topic modeling: LDA method</li></p></div>
-<p>Dataset we process Hamburg Parliament Database and Elbvertiefung e-Newsletter and include point results on the interactive web tool:</p>
+<li style="text-align:left;"><b>data clean preprocessing</b>: (conversion into small letters, remove punctuations, special characters and numbers; remove German stop words)</li>
+<li style="text-align:left;"><b>Location Extraction</b> (Name Entity Recognition): We use the <i>Flair  / NER-German-Large module</i> from <a href="https://huggingface.co/flair/ner-german-large" target="_blank" title="Hugging Face">Hugging Face</a>.</li>
+<li style="text-align:left;"><b>Geo coordinate conversion</b> (Geocoding): We use Nominatim open source geocoder.</li>
+<li style="text-align:left;"><b>Keyword analysis</b>: visualise with <a href="#keyword">Word Cloud</a></li>
+<li style="text-align:left;"><b>Sentiment analysis</b>: <a href="#sentiment">VADER and TextBlobDE</a></li>
+<li style="text-align:left;"><b>Topic modeling</b>: <a href="#topic">LDA method</a> (Latent Dirichlet Allocation)</li></p></div>
+<p style="text-align:left">Dataset we process <a href="https://www.buergerschaft-hh.de/parldok/" target="_blank" title="HH Parliament">Hamburg Parliament Database</a> and <a href="https://www.zeit.de/serie/elbvertiefung" target="_blank" title="Elbvertiefung">Elbvertiefung e-Newsletter</a> and include results as point clusters on the interactive web tool:</p><p>&nbsp;</p><a style="font-size:20px" href="https://ligfinder.digitalcityscience.rocks/" target="_blank" title="Open new window to view LIG Finder">The LIG Finder</a>
                     
                 </div>
 				<p>&nbsp;</p><p>&nbsp;</p>
-				 <a class="btn btn-primary page-scroll" href="#contact">LIG Finder</a>
+				 <a class="btn btn-primary page-scroll" href="#contact">LIG Finder Demo</a>
             </div>
         </div>
     </section>
@@ -116,7 +116,7 @@
 					<video style="max-width: 85%; height: auto; " controls>
   <source src="video/LIG_Finder.mp4" type="video/mp4"></video>
 
-					<p>Source Code: <a href="https://github.com/digitalcityscience/ligfinder_refactor" target="_blank">Github Link </a></p>
+					<p>Source Code: <a href="https://github.com/digitalcityscience/ligfinder_refactor" target="_blank" title="Open new window to Github site">Github Link </a></p>
                 </div>
             </div>
         </div>
@@ -132,10 +132,8 @@
                     <h1>The software architect of the LIG Finder</h1>
 					<p>&nbsp;</p>
 					<p style="text-align:left;">
-					Since early in this year, we refactored the LIG Finder app and had chosen open source solutions such as Python Flask as the middleware, PostgreSQL + PostGIS as database, and Vue.js as the javascript framework. With the refactor version we preferred Maplibre GL JS over leaflet or openlayers due to superior rendering performance and its 3D renderings potential. It also has a geocoding toolbox to allow web users to query a place name or an address. The user database makes it possible to  favourite land parcels and store them for later use.</p>
-<p style="text-align:left;">
-The LIG Finder Application follows the client-server architecture, in which the client accesses the services via HTTP requests. The client consists of the user interface built with Vuejs, and MapLibre GL JS as an interactive map renderer. The Python Flask and PostgreSQL with PostGIS extension were used as middleware and database, respectively for building the APIs and services.</p>
-<img src="img/classification.jpg" style="max-width: 58%; height: auto; " alt="classification module" /><br/>
+					Since early in this year, we refactored the LIG Finder app and had chosen open source solutions such as <b>Python Flask</b> as the middleware, <b>PostgreSQL and PostGIS</b> as database, <b>Vue.js</b> as the javascript framework. The LIG Finder Application follows the client-server architecture, and with the refactor version we preferred <b>Maplibre GL JS</b> over leaflet or openlayers due to superior rendering performance and its <b>3D renderings</b> potential. It also has a <b>geocoding toolbox</b> to allow web users to query a place name or an address. The user database makes it possible to <b>favourite land parcels</b> and store them for later use.</p>
+<img src="img/classification.jpg" style="max-width: 63%; height: auto; " alt="classification module" /><p>&nbsp;</p>
 <a class="btn btn-primary page-scroll" href="#find">Finding Parcels</a>
 
 					
@@ -150,13 +148,13 @@ The LIG Finder Application follows the client-server architecture, in which the 
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Finding parcels of the LIG Finder</h1>
+                    <h1>Finding parcels in the LIG Finder</h1>
 					<p>&nbsp;</p>
 					
-<p>&nbsp;</p><p style="text-align:left;">Finding parcels begins with selecting an Area of Interest (AoI). Users are provided with three selection methods for defining an AOI, including:<br/>
-a- Administrative divisions: Users can interactively select the AoI in four different administrative levels by clicking on the geometry or selecting by name.<br/>
-b- Drawing: The AoI can be defined by drawing a polygon on the map canvas.<br/>
-c- Walking, biking, and driving distance: the PgRouting extension was used for the calculation of the travel distances. Thus, the corresponding OSM network data were retrieved, stored in the database, and their network topology and costs (time) were calculated in the preprocessing phase. Finally, the polygon (AoI) is created by specifying all accessible nodes from a central point and within a specified time.<br/>
+<p>&nbsp;</p><p style="text-align:left;">Finding parcels begins with selecting an <b>Area of Interest</b> (AoI). Users are provided with three selection methods for defining an AOI, including:<br/>
+<b><i>(1) Administrative divisions</i></b>: Users can interactively select the AoI in four different administrative levels by clicking on the geometry or selecting by name.<br/>
+<b><i>(2) Drawing</i></b>: The AoI can be defined by drawing a polygon on the map canvas.<br/>
+<b><i>(3) Walking, biking, and driving distance</i></b>: the PgRouting extension was used for the calculation of the travel distances. Thus, the corresponding OSM network data were retrieved, stored in the database, and their network topology and costs (time) were calculated in the preprocessing phase. Finally, the polygon (AoI) is created by specifying all accessible nodes from a central point and within a specified time.<br/>
 Using spatial intersection, land parcels within the AoI are then retrieved. Next, parcels can be filtered based on their area and gross built-up area. Further, users can refine the parcels using 98 criteria divided into three categories including land-use, property, and special areas, by placing criteria inside exclude and include parts. Finally, users can rank the filtered parcels based on their proximity to the city facilities using KNN analysis.
 </p><img src="img/find_parcel.png" style="max-width: 45%; height: auto; " alt="find parcels module" /><br/><br/>
 <a class="btn btn-primary page-scroll" href="#keyword">Keyword Analysis</a>
@@ -175,7 +173,7 @@ Using spatial intersection, land parcels within the AoI are then retrieved. Next
                     <h1>Keyword analysis: Top 20 keywords from Elbvertiefungs</h1>
 				<p>&nbsp;</p>
 <img src="img/index.png" style="max-width: 35%; height: auto; " alt="keyword clouds" />&nbsp;&nbsp;<img src="img/index2.png" style="max-width: 35%; height: auto; " alt="keyword clouds" /><br/>
-<img src="img/index3.png" style="max-width: 35%; height: auto; " alt="keyword clouds" />&nbsp;&nbsp;<img src="img/index4.png" style="max-width: 35%; height: auto; " alt="keyword clouds" /><br/><p>&nbsp;</p>
+<img src="img/index3.png" style="max-width: 35%; height: auto; " alt="keyword clouds" />&nbsp;&nbsp;<img src="img/index4.png" style="max-width: 35%; height: auto; " alt="keyword clouds" /><p>&nbsp;</p>
 <a class="btn btn-primary page-scroll" href="#sentiment">Sentiment Analysis</a>
 
 					
@@ -194,7 +192,7 @@ Using spatial intersection, land parcels within the AoI are then retrieved. Next
 					<p>&nbsp;</p>
 					
 <div style="text-align:left;"><img src="img/sentiment.png" style="max-width: 45%; float: left; padding: 0 20px 20px 0; text-align:center" alt="TextBlobDE" /><p>&nbsp;</p>
-<p>TextBlobDE & VADER - understand Polarity and Subjectivity</p><p>&nbsp;</p>The distribution of newsletter articles are less polarised and much fewer aggregated to the X axis, compared to parliament dataset. The colour of points represent TextBlobDE and VADER comparison. When both methods yield positive results, draw the green points. Points in blue represent both methods that determine negative results. Points in yellow show both methods yield neutral results. Those red points represent these two methods yield contradictory results.</div>
+<p>Sentiment analysis is a natural language procedure that provides information regarding <b>Polarity</b> and <b>Subjectivity</b></p><p>&nbsp;</p><p>We tried two methods – <b><i>TextBlobDE</b></i> and <b><i>VADER</b></i> (Valence Aware Dictionary and sEntiment Reasoner). TextblobDE provides information about polarity and subjectivity. VADER, on the other hand, gives values for negativity, positivity and neutrality of the text (in percentage), with the compound score, one can determine if overall texts are positive, negative or neutral. We also adapted Google Translate to convert text from German into English but this does not have any impact on overall sentiment scores, so we still keep our process in German.</p><br/>When we plot the sentiment analysis result on a 2D chart, illustrate as the left figure, the distribution of newsletter articles are less polarised and much fewer aggregated to the X axis, compared to parliament dataset. The colour of points represent TextBlobDE and VADER comparison. When both methods yield positive results, draw the <b><i>green</b></i> points. Points in <b><i>blue</b></i> represent both methods that determine negative results. Points in <b><i>yellow</b></i> show both methods yield neutral results. Those red points represent these two methods yield contradictory results.</div>
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
 <a class="btn btn-primary page-scroll" href="#visual">Visualization</a>
 
@@ -211,9 +209,9 @@ Using spatial intersection, land parcels within the AoI are then retrieved. Next
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Visualization</h1>
-					<div style="text-align:left;"><img src="img/2D_Pie.png" style="max-width: 40%; float: left; padding: 0 20px 20px 0; text-align:center" alt="2D" />
-<p>2D Pie Chart sentiment result comparison</p><p>&nbsp;</p>When we draw these results in 2D, one can easily see spatial distribution of these sentiment analysis results. With pie chart probably is an efficient way to see distribution in percentage, especially when there are duplicated points which fall on the same coordinates. Figure to the left suggest, the bigger the pie suggests more points are geocoded into the same location.</div><p>&nbsp;</p><p>&nbsp;</p><div style="text-align:right;">
-<img src="img/Building+bars.jpg" style="max-width: 40%; float: right; padding: 0 20px 20px 20px; text-align:left" alt="3D" /><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>Another geovisualization approach is a 3D stacked bar chart. Figure to the right shows how the spatial distribution of sentiment analysis. Colour code were adapted the same as in the 2D Pie chart.</div>
+					<div style="text-align:left;"><img src="img/2D_Pie.png" style="max-width: 35%; float: left; padding: 0 20px 20px 0; text-align:center" alt="2D" />
+<p>&nbsp;</p><p><b>2D Pie Chart sentiment result comparison</b></p><p>&nbsp;</p>With pie chart probably is an efficient way to see multivariate, categorical value distribution <u>in percentage</u>, especially when there are <b><i>duplicated points</b></i> which fall on the same coordinates. Figure to the left suggest, the bigger the pie represents more points are geocoded into the same location.</div><p>&nbsp;</p><p>&nbsp;</p><div style="text-align:right;">
+<img src="img/Building+bars.jpg" style="max-width: 40%; float: right; padding: 0 20px 20px 20px; text-align:left" alt="3D" /><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>Another geovisualization approach is a 3D stacked bar chart. Figure to the right shows how the spatial distribution of sentiment analysis in 3D. Colour code were adapted the same as in the 2D Pie chart.</div>
 <br/><p><a class="btn btn-primary page-scroll" href="#topic">Topic Modeling</a></p>
 
 
@@ -240,20 +238,20 @@ Using spatial intersection, land parcels within the AoI are then retrieved. Next
                     <h1>The LIG Team</h1>
 					<p>&nbsp;</p>
 					<div style="text-align:center;">
-					<img src="img/Martin.jpg" style="max-width: 30%; height: auto; float: center; padding: 0 20px 0px 50px; " alt="Martin Niggemann" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<img src="img/Ariel.jpg" style="max-width: 30%; height: auto; float: center; padding: 0 20px 0px 20px;  " alt="Juiwen Chang" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<img src="img/Qasem.png" style="max-width: 30%; height: auto; float: center; padding: 0 50px 0px 20px; " alt="Qasem" />
+					<img src="img/Martin.jpg" style="max-width: 30%; height: auto; float: center; padding: 0 40px 0px 50px; " alt="Martin Niggemann" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="img/Ariel.jpg" style="max-width: 30%; height: auto; float: center; padding: 0 40px 0px 40px;  " alt="Juiwen Chang" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="img/Qasem.png" style="max-width: 30%; height: auto; float: center; padding: 0 50px 0px 40px; " alt="Qasem" />
 					<br/>
 <p style="text-align:center;">
-Project Manager: Martin Niggemann&nbsp;&nbsp;&nbsp;&nbsp;
-Geoparsing: Juiwen Chang&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Software architect: Qasem Safariallahkheili &nbsp;&nbsp;&nbsp;
+Project Manager: <a href = "mailto: martin.niggemann@hcu-hamburg.de" title="e-mail to Martin">Martin Niggemann</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="padding: 0 50px 0px 50px;">Geoparsing: Juiwen Chang</span> &nbsp;&nbsp;&nbsp;
+Software architect: Qasem Safariallahkheili
 
 </p></div><p>&nbsp;</p>
 <div style="text-align:center;">
-<img src="img/Filipe.jpg" style="max-width: 30%; height: auto; float: center; padding: 0 20px 0px 50px; " alt="Filipe" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<img src="img/Maksym.jpg" style="max-width: 30%; height: auto; float: center; padding: 0 50px 0px 20px; " alt="Maksym" />
-<p>Social Scientist: Filipe Mello Rose&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="img/Filipe.jpg" style="max-width: 30%; height: auto; float: center; padding: 0 40px 0px 50px; " alt="Filipe" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="img/Maksym.jpg" style="max-width: 30%; height: auto; float: center; padding: 0 50px 0px 40px; " alt="Maksym" />
+<p>Social Scientist: Filipe Mello Rose&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Student Assistent: Maksym Yermakovych</p><p>&nbsp;</p></div>
 <a class="btn btn-primary page-scroll" href="#">Back to top</a>
 

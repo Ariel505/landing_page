@@ -1,6 +1,9 @@
 body {
     width: 100%;
     height: 100%;
+	font-family: candara,calibri-light;sans-serif;
+	font-weight: 400;
+	color: #6c7279;
 }
 html {
     width: 100%;
@@ -42,6 +45,9 @@ html {
     background-color: #337AB7;
     color: #FFF;
 }
+h1 {
+	color: #333333;
+}
 .welcome-section {
     height: 100%;
     padding-top: 150px;
@@ -74,7 +80,7 @@ html {
 }
 .keyword-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
     background: #EFDECD;
 }
